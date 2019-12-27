@@ -1,0 +1,21 @@
+{
+    "name": "webpack-4",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build": "webpack --entry ./index.js --output ./bundle.js --mode development",
+        "build:local": "webpack",
+        "build:external": "webpack --config ./external/webpack.config.js",
+        "build:multi": "webpack --config ./multi-entry-points/webpack.config.js"
+    },
+    "keywords": [
+        "webpack"
+    ],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "webpack": "^4.41.4",
+        "webpack-cli": "^3.3.10"
+    }
+}
