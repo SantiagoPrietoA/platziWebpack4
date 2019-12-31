@@ -1,0 +1,25 @@
+body .post-css {
+    color: white
+  }
+body {
+    background: #20222a;
+    color: #61dafb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 40px;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.less {
+  color: orange;
+}
+
+.sass{color:pink}
+
+.stylus {
+  color: #008000;
+}
+

@@ -14,7 +14,12 @@
         "build:babel": "webpack-dev-server --config ./babel/webpack.config.js",
         "build:react": "webpack-dev-server --config ./react-support/webpack.config.js",
         "build:url-loader": "webpack-dev-server --config ./url-loader/webpack.config.js",
-        "build:prepro": "webpack-dev-server --config ./prepro/webpack.config.js"
+        "build:prepro": "webpack-dev-server --config ./prepro/webpack.config.js",
+        "build:prevent-duplication": "webpack --config ./dll/webpack.config.js",
+        "build:dll": "webpack --config ./dll/webpack.dll.config.js",
+        "build:prevent-duplication-fast": "webpack --config ./dll/webpack.config.js",
+        "build:dynamic-dll": "webpack --config ./dynamic-imports/webpack.dll.config.js",
+        "build:dynamic": "webpack --config ./dynamic-imports/webpack.config.js"
     },
     "keywords": [
         "webpack"
@@ -23,6 +28,7 @@
     "license": "ISC",
     "devDependencies": {
         "@babel/core": "^7.7.7",
+        "@babel/plugin-syntax-dynamic-import": "^7.7.4",
         "@babel/plugin-transform-runtime": "^7.7.6",
         "@babel/preset-env": "^7.7.7",
         "@babel/preset-react": "^7.7.4",
